@@ -15,7 +15,9 @@ public class ex4_3 {
             do {
                 System.out.print("Enter a symbol: \n");
                 code = in.next();//зчитування текстового рядка
-                System.out.printf("Code of %s is %d \n", code.charAt(0), Integer.valueOf(code.charAt(0)));//виведення коду
+                System.out.printf("Code of %s is %d \n",
+                        code.charAt(0),
+                        (int) code.charAt(0));//виведення коду
                 if (code.charAt(0) == 'q') exit = false;//вихід з циклу
 
             } while (exit);
